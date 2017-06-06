@@ -45,6 +45,10 @@ class Bootstrap implements BootstrapInterface
             if (!$authManager) {
                 $app->set('authManager', [
                     'class' => DbManager::className(),
+                    'itemTable' => 'usrAuthItem',
+                    'itemChildTable' => 'usrAuthItemChild',
+                    'assignmentTable' => 'usrAuthAssignment',
+                    'ruleTable' => 'usrAuthRule'
                 ]);
             } else if (!($authManager instanceof ManagerInterface)) {
                 throw new InvalidConfigException('You have wrong authManager configuration');
