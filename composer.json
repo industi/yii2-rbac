@@ -1,5 +1,5 @@
 {
-  "name": "dektrium/yii2-rbac",
+  "name": "industi/yii2-rbac",
   "description": "RBAC management module for Yii2",
   "keywords": ["yii2", "yii2-rbac", "rbac management", "dektrium", "rbac gui", "yii rbac", "rbac module"],
   "type": "yii2-extension",
@@ -22,11 +22,11 @@
   },
   "autoload": {
     "psr-4": {
-      "dektrium\\rbac\\": ""
+      "industi\\yii2\\rbac\\": ""
     }
   },
   "extra": {
-    "bootstrap": "dektrium\\rbac\\Bootstrap",
+    "bootstrap": "industi\\yii2\\rbac\\Bootstrap",
     "branch-alias": {
       "dev-master": "1.0.x-dev"
     }
