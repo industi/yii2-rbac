@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\rbac\models;
+namespace  industi\yii2\rbac\models;
 use yii\helpers\ArrayHelper;
 use yii\rbac\Item;
 

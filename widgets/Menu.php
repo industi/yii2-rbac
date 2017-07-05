@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\rbac\widgets;
+namespace  industi\yii2\rbac\widgets;
 
 use yii\bootstrap\Nav;
 

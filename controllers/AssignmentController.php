@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\rbac\controllers;
+namespace  industi\yii2\rbac\controllers;
 
-use dektrium\rbac\models\Assignment;
+use  industi\yii2\rbac\models\Assignment;
 use Yii;
 use yii\web\Controller;
 

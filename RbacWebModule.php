@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\rbac;
+namespace  industi\yii2\rbac;
 
 use yii\base\Module as BaseModule;
 use yii\filters\AccessControl;

@@ -14,7 +14,7 @@
  * @var $content string
  */
 
-use dektrium\rbac\widgets\Menu;
+use  industi\yii2\rbac\widgets\Menu;
 
 ?>
 

@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\rbac\models;
+namespace  industi\yii2\rbac\models;
 
-use dektrium\rbac\components\DbManager;
+use  industi\yii2\rbac\components\DbManager;
 use yii\base\InvalidConfigException;
 use yii\base\Model;
 use yii\di\Instance;

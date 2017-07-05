@@ -1,6 +1,6 @@
 <?php
 
-namespace dektrium\rbac;
+namespace  industi\yii2\rbac;
 
 use yii\base\Module;
 

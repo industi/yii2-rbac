@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\rbac\validators;
+namespace  industi\yii2\rbac\validators;
 
 use yii\validators\Validator;
 

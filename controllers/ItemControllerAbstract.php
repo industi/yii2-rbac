@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\rbac\controllers;
+namespace industi\yii2\rbac\controllers;
 
 use yii\base\InvalidConfigException;
 use yii\base\Model;
@@ -17,7 +17,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\web\Response;
 use yii\widgets\ActiveForm;
-use dektrium\rbac\models\Search;
+use  industi\yii2\rbac\models\Search;
 
 /**
  * @author Dmitry Erofeev <dmeroff@gmail.com>

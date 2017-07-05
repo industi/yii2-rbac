@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\rbac;
+namespace  industi\yii2\rbac;
 
-use dektrium\rbac\components\DbManager;
-use dektrium\rbac\components\ManagerInterface;
+use  industi\yii2\rbac\components\DbManager;
+use  industi\yii2\rbac\components\ManagerInterface;
 use dektrium\user\Module as UserModule;
 use yii\base\Application;
 use yii\web\Application as WebApplication;

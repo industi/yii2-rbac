@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\rbac\models;
+namespace  industi\yii2\rbac\models;
 
 use yii\base\InvalidConfigException;
 use yii\base\InvalidParamException;
 use yii\base\Model;
 use yii\helpers\Json;
 use yii\rbac\Item;
-use dektrium\rbac\validators\RbacValidator;
+use  industi\yii2\rbac\validators\RbacValidator;
 
 /**
  * @author Dmitry Erofeev <dmeroff@gmail.com>

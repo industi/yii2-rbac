@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\rbac\controllers;
+namespace  industi\yii2\rbac\controllers;
 
 use yii\rbac\Role;
 use yii\web\NotFoundHttpException;

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\rbac\components;
+namespace  industi\yii2\rbac\components;
 
 use yii\db\Query;
 use yii\rbac\DbManager as BaseDbManager;

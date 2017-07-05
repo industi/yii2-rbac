@@ -10,7 +10,7 @@
  */
 
 
-namespace dektrium\rbac\commands;
+namespace  industi\yii2\rbac\commands;
 
 use yii\console\controllers\BaseMigrateController;
 use yii\db\Connection;
