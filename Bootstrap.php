@@ -13,7 +13,7 @@ namespace  industi\yii2\rbac;
 
 use  industi\yii2\rbac\components\DbManager;
 use  industi\yii2\rbac\components\ManagerInterface;
-use dektrium\user\Module as UserModule;
+use industi\yii2\user\Module as UserModule;
 use yii\base\Application;
 use yii\web\Application as WebApplication;
 use yii\base\BootstrapInterface;

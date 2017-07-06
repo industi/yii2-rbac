@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 ?>
 
-<?php $this->beginContent('@dektrium/rbac/views/layout.php') ?>
+<?php $this->beginContent('@vendor/industi/yii2-rbac/views/layout.php') ?>
 
 <?= $this->render('_form', [
     'model' => $model,

@@ -21,7 +21,7 @@ use yii\rbac\Item;
 class RoleController extends ItemControllerAbstract
 {
     /** @var string */
-    protected $modelClass = 'dektrium\rbac\models\Role';
+    protected $modelClass = 'industi\yii2\rbac\models\Role';
     
     protected $type = Item::TYPE_ROLE;
 

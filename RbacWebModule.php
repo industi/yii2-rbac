@@ -11,6 +11,7 @@
 
 namespace  industi\yii2\rbac;
 
+use industi\yii2\user\models\User;
 use yii\base\Module as BaseModule;
 use yii\filters\AccessControl;
 
@@ -58,6 +59,9 @@ class RbacWebModule extends BaseModule
      */
     public function checkAccess()
     {
+        /**
+         * @var $user User
+         */
         $user = \Yii::$app->user->identity;
 
         if (method_exists($user, 'getIsAdmin')) {

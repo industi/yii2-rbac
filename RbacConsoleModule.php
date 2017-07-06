@@ -14,5 +14,5 @@ class RbacConsoleModule extends Module
     /**
      * @inheritdoc
      */
-    public $controllerNamespace = 'dektrium\rbac\commands';
+    public $controllerNamespace = 'industi\yii2\rbac\commands';
 }

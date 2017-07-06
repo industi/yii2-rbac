@@ -21,7 +21,7 @@ use yii\rbac\Item;
 class PermissionController extends ItemControllerAbstract
 {
     /** @var string */
-    protected $modelClass = 'dektrium\rbac\models\Permission';
+    protected $modelClass = 'industi\yii2\rbac\models\Permission';
     
     /** @var int */
     protected $type = Item::TYPE_PERMISSION;

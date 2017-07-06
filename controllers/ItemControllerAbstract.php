@@ -11,6 +11,8 @@
 
 namespace industi\yii2\rbac\controllers;
 
+use industi\yii2\rbac\models\Permission;
+use industi\yii2\rbac\models\Role;
 use yii\base\InvalidConfigException;
 use yii\base\Model;
 use yii\web\Controller;
@@ -26,7 +28,7 @@ abstract class ItemControllerAbstract extends Controller
 {
     /**
      * @param  string $name
-     * @return \dektrium\rbac\models\Role|\dektrium\rbac\models\Permission
+     * @return Role | Permission
      */
     abstract protected function getItem($name);
 

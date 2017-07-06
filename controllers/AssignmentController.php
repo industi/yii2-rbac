@@ -11,44 +11,47 @@
 
 namespace  industi\yii2\rbac\controllers;
 
-use  industi\yii2\rbac\models\Assignment;
+use industi\yii2\rbac\components\DbManager;
+use industi\yii2\rbac\models\Assignment;
 use Yii;
-use yii\web\Controller;
+use yii\base\InvalidConfigException;
+use yii\base\Widget;
 
 /**
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */
-class AssignmentController extends Controller
+class Assignments extends Widget
 {
-    /**
-     * Show form with auth items for user.
-     * 
-     * @param int $id
-     */
-    public function actionAssign($id)
+    /** @var integer ID of the user to whom auth items will be assigned. */
+    public $userId;
+
+    /** @var DbManager */
+    protected $manager;
+
+    /** @inheritdoc */
+    public function init()
+    {
+        parent::init();
+        $this->manager = Yii::$app->authManager;
+        if ($this->userId === null) {
+            throw new InvalidConfigException('You should set ' . __CLASS__ . '::$userId');
+        }
+    }
+
+    /** @inheritdoc */
+    public function run()
     {
         $model = Yii::createObject([
             'class'   => Assignment::className(),
-            'user_id' => $id,
+            'user_id' => $this->userId,
         ]);
-        
-        if ($model->load(\Yii::$app->request->post()) && $model->updateAssignments()) {
+
+        if ($model->load(\Yii::$app->request->post())) {
+            $model->updateAssignments();
         }
 
-        return \dektrium\rbac\widgets\Assignments::widget([
+        return $this->render('form', [
             'model' => $model,
         ]);
-        /*$model = Yii::createObject([
-            'class'   => Assignment::className(),
-            'user_id' => $id,
-        ]);
-        
-        if ($model->load(Yii::$app->request->post()) && $model->updateAssignments()) {
-            
-        }
-        
-        return $this->render('assign', [
-            'model' => $model,
-        ]);*/
     }
 }
