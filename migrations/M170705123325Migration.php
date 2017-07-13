@@ -31,7 +31,7 @@ class M170705123325Migration extends Migration  implements MigrationInterface
     /**
      * @var string|DbManager The auth manager component ID that this migration should work with.
      */
-    public $authManager = 'authManager';
+    public $authManager  = 'authManager';
 
     /**
      * Initializes the migration.
