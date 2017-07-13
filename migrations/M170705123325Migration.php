@@ -11,8 +11,7 @@
 
 namespace  industi\yii2\rbac\migrations;
 
-use industi\yii2\appengine\components\Migration;
-use  industi\yii2\rbac\components\DbManager;
+use industi\yii2\rbac\components\DbManager;
 use yii\base\Component;
 use yii\db\MigrationInterface;
 use yii\di\Instance;
@@ -28,6 +27,8 @@ use yii\rbac\Rule;
  */
 class M170705123325Migration extends Component  implements MigrationInterface
 {
+
+    public $db = 'db';
     /**
      * @var string|DbManager The auth manager component ID that this migration should work with.
      */
