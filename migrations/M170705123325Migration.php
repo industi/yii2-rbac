@@ -26,7 +26,7 @@ use yii\rbac\Rule;
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */
-class M170705123325Migration extends Component  implements MigrationInterface
+class M170705123325Migration extends Migration  implements MigrationInterface
 {
     /**
      * @var string|DbManager The auth manager component ID that this migration should work with.
