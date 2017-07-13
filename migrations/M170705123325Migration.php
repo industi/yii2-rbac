@@ -110,7 +110,7 @@ class M170705123325Migration extends Component  implements MigrationInterface
      */
     public function safeUp()
     {
-        $this->up();
+
     }
 
     /**
@@ -121,7 +121,7 @@ class M170705123325Migration extends Component  implements MigrationInterface
      */
     public function safeDown()
     {
-        $this->down();
+
     }
 
     /**
