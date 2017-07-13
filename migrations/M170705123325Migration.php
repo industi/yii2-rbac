@@ -57,6 +57,7 @@ class M170705123325Migration extends Component  implements MigrationInterface
 
         try {
             if ($this->safeUp() === false) {
+                echo "Rolling transaction back. niestety\n";
                 $transaction->rollBack();
                 return false;
             }
