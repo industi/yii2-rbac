@@ -20,7 +20,7 @@ use yii\base\Widget;
 /**
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */
-class Assignments extends Widget
+class AssignmentController extends Widget
 {
     /** @var integer ID of the user to whom auth items will be assigned. */
     public $userId;
